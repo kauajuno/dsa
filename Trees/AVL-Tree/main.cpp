@@ -1,11 +1,10 @@
 #include "AVLNode.hpp"
+#include "AVLTree.hpp"
 #include <iostream>
 
 int main(){
-    AVLNode* root = new AVLNode(10);
-
-    root->setLeft(new AVLNode(5));
-    root->setRight(new AVLNode(15));
-    std::cout << root->getVal() << std::endl;
+    AVLTree tree;
+    tree.insert(10);
+    tree.insert(15);
+    tree.insert(20);
 }
-
